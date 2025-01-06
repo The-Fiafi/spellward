@@ -1,0 +1,44 @@
+.roles-section {
+    margin-top: 5vw;
+
+    .roles-header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        text-align: center;
+        
+        .card-header {
+            width: 100%;
+        }
+
+        .roles-subheader-text {
+            width: max-content;
+        }
+    }
+
+    .available-roles {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+
+        height: 35vw;
+
+        margin-top: 5vw;
+
+        .role-info-container {
+            padding: 1vw;
+
+            .role-info-text-header {
+                font-size: 2.4vw;
+                font-weight: 500;
+            }
+
+            .role-info-text {
+                font-size: 1.1vw;
+                font-weight: 200;
+            }
+        }
+    }
+}

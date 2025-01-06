@@ -19,5 +19,19 @@ html, body {
     
     overflow-x: hidden;
 
-	user-select: none; 
+	user-select: none;
+}
+
+.card-header {
+    width: 100%;
+
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.card-subheader {
+    width: 100%;
+
+    font-size: 2.35vw;
+    font-weight: 200;
 }
