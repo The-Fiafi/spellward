@@ -1,8 +1,9 @@
-import SpellWardLogo from "@/static/spellward_logo.png";
+import SpellWardLogo from "@/static/img/spellward_logo.png";
 
 import "./App.scss";
 
 import TitleParallax from "./components/PageParts/TitleParallax/TitleParallax";
+import InfoCards from "./components/PageParts/InfoCards/InfoCards";
 
 
 export default function App() {
@@ -15,6 +16,8 @@ export default function App() {
         
                 <TitleParallax offset={0} />
             </div>
+
+            <InfoCards />
         </div>
     );
 };

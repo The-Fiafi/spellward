@@ -1,7 +1,7 @@
-import Stars from "@/static/stars.png";
-import ForestBack from "@/static/forest_back.png";
-import ForestFront from "@/static/forest_front.png";
-import Mountain from "@/static/mountain.png";
+import Stars from "@/static/img/stars.png";
+import ForestBack from "@/static/img/forest_back.png";
+import ForestFront from "@/static/img/forest_front.png";
+import Mountain from "@/static/img/mountain.png";
 
 import "./TitleParallax.scss";
 
