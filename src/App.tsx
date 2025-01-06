@@ -6,6 +6,7 @@ import "./App.scss";
 import TitleParallax from "./components/PageSections/TitleParallax/TitleParallax";
 import InfoCards from "./components/PageSections/InfoCards/InfoCards";
 import Roles from "./components/PageSections/Roles/Roles";
+import HowToPlay from "./components/PageSections/HowToPlay/HowToPlay";
 
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
             <div className="info-background" style={{ backgroundImage: `url(${Background})` }}>
                 <InfoCards />
                 <Roles />
+                <HowToPlay />
             </div>
         </div>
     );
