@@ -8,7 +8,7 @@ import Button from "@/components/UI/Button/Button";
 
 export default function InfoCards() {
     return (
-        <div className="info-content">
+        <section className="info-section">
             <InfoCard
                 title="Приключения зовут!"
                 orientation="right"
@@ -47,6 +47,6 @@ export default function InfoCards() {
                     <Button>Больше о РП</Button>
                 </div>
             </InfoCard>
-        </div>
+        </section>
     );
 }

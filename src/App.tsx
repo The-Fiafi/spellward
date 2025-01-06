@@ -3,9 +3,9 @@ import Background from "@/static/img/background.jpg";
 
 import "./App.scss";
 
-import TitleParallax from "./components/PageParts/TitleParallax/TitleParallax";
-import InfoCards from "./components/PageParts/InfoCards/InfoCards";
-import Roles from "./components/PageParts/Roles/Roles";
+import TitleParallax from "./components/PageSections/TitleParallax/TitleParallax";
+import InfoCards from "./components/PageSections/InfoCards/InfoCards";
+import Roles from "./components/PageSections/Roles/Roles";
 
 
 export default function App() {
