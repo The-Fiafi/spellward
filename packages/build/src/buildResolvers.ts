@@ -9,6 +9,7 @@ export function buildResolvers(options: BuildOptions): Configuration["resolve"] 
         alias: {
             "@": options.paths.src,
             "@UI": path.resolve(options.paths.src, "components/UI"),
+            "@context": path.resolve(options.paths.src, "context"),
         }
     }
 }
