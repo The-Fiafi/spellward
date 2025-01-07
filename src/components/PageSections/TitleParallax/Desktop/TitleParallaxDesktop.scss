@@ -1,0 +1,91 @@
+.title-section {
+    .spellward-title-logo-container-desktop {
+        position: sticky;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100vw;
+        height: 100vh;
+
+        .spellward-title-logo-desktop {
+            width: 60%;
+            height: auto;
+        }
+    }
+
+    .parallax-title-container-desktop {
+        .spellward-stars-container-desktop {
+            display: flex;
+            justify-content: center;
+
+            width: 100%;
+            height: 100%;
+
+            .spellward-stars-desktop {
+                position: absolute;
+
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .spellward-mountain-container-desktop {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            width: 100vw;
+            height: 100%;
+
+            z-index: 1;
+
+            .spellward-mountain-desktop {
+                width: 90vw;
+                height: auto;
+            }
+        }
+
+        .forest-background-container-desktop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
+            height: 90%;
+        }
+
+        .spellward-forest-back-container-desktop {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            .spellward-forest-back-desktop {
+                width: 100vw;
+                height: auto;
+            }
+
+            z-index: 2;
+        }
+
+        .spellward-forest-front-container-desktop {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            .spellward-forest-front-desktop {
+                width: 100vw;
+                height: auto;
+            }
+
+            z-index: 3;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

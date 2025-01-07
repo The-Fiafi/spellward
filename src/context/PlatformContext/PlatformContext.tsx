@@ -1,3 +1,5 @@
 import { createContext } from "react";
 
-export default createContext({});
+export type PlatformGlobalContent = "mobile" | "desktop";
+
+export default createContext<PlatformGlobalContent>("mobile");

@@ -1,0 +1,69 @@
+.title-section {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+
+    overflow: hidden;
+
+    .spellward-title-logo-container-mobile {
+        position: absolute;
+        top: 20%;
+
+        width: 90%;
+
+        .spellward-title-logo-mobile {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .spellward-mountain-container-mobile {
+        position: absolute;
+        bottom: 0;
+
+        width: 175%;
+
+        z-index: 1;
+
+        .spellward-mountain-mobile {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .spellward-forest-back-container-mobile {
+        position: absolute;
+        bottom: 0;
+        right: -46%;
+
+        width: 175%;
+
+        z-index: 2;
+
+        .spellward-forest-back-mobile {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .spellward-forest-front-container-mobile {
+        position: absolute;
+        bottom: -14%;
+
+        width: 175%;
+
+        z-index: 3;
+
+        .spellward-forest-front-mobile {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

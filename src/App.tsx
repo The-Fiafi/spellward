@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
+import PlatformContext, { PlatformGlobalContent } from "./context/PlatformContext/PlatformContext";
 
-import SpellWardLogo from "@/static/img/spellward_logo.png";
 import Background from "@/static/img/background.jpg";
 
 import "./App.scss";
@@ -11,14 +11,13 @@ import InfoCards from "./components/PageSections/InfoCards/InfoCards";
 import Roles from "./components/PageSections/Roles/Roles";
 import HowToPlay from "./components/PageSections/HowToPlay/HowToPlay";
 import Footer from "./components/UI/Footer/Footer";
-import PlatformContext from "./context/PlatformContext/PlatformContext";
 
 
 export default function App() {
-    var platformState = useState<"mobile" | "desktop">("mobile");
+    var [platformState, setPlatformState] = useState<PlatformGlobalContent>("mobile");
 
     useEffect(() => {
-        platformState[1](
+        setPlatformState(
             window.screen.width > window.screen.height
                 ? "desktop"
                 : "mobile"
@@ -29,14 +28,13 @@ export default function App() {
         <PlatformContext.Provider value={platformState}>
             <div className="app">
                 <div className="title-container">
-                    <div className="spellward-title-logo-container">
-                        <img src={SpellWardLogo} className="spellward-title-logo"/>
-                    </div>
-
                     <TitleParallax offset={0} />
                 </div>
 
-                <div className="info-background" style={{ backgroundImage: `url(${Background})` }}>
+                <div
+                    className="info-background"
+                    style={{ backgroundImage: `url(${Background})` }}
+                >
                     <InfoCards />
                     <Roles />
                     <HowToPlay />
