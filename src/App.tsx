@@ -11,7 +11,10 @@ import Footer from "./components/UI/Footer/Footer";
 
 
 export default function App() {
+
+
     return (
+    
         <div className="app">
             <div className="title-container">
                 <div className="spellward-title-logo-container">
@@ -28,5 +31,6 @@ export default function App() {
                 <Footer />
             </div>
         </div>
+  
     );
 };

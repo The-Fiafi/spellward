@@ -11,14 +11,14 @@ interface PropType {
 
 
 export default function InfoCard({ title, videoPath, orientation, children }: PropType) {
-    const Video = () => (
-        <div className="video-card-container">
+    const Video = (props: React.HTMLAttributes<HTMLDivElement>) => (
+        <div {...props} className="video-card-container">
             <VideoPlayer src={videoPath} />
         </div>
     );
 
-    const Child = () => (
-        <div className="card-text-container">
+    const Child = (props: React.HTMLAttributes<HTMLDivElement>) => (
+        <div {...props} className="card-text-container">
             {children}
         </div>
     );
@@ -31,13 +31,13 @@ export default function InfoCard({ title, videoPath, orientation, children }: Pr
                 {orientation == "left"
                     ? (
                         <>
-                            <Child />
+                            <Child style={{marginRight: "3vw"}} />
                             <Video />
                         </>
                     )
                     : (
                         <>
-                            <Video />
+                            <Video style={{marginRight: "3vw"}} />
                             <Child />
                         </>
                     )
