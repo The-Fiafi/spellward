@@ -1,4 +1,6 @@
-import Video from "@/static/video/ValorantPlay.mp4";
+import Video1 from "@/static/video/sp_video_1.mp4";
+import Video2 from "@/static/video/sp_video_2.mp4";
+import Video3 from "@/static/video/sp_video_3.mp4";
 
 import "./InfoCards.scss";
 
@@ -12,10 +14,10 @@ export default function InfoCards() {
             <InfoCard
                 title="Приключения зовут!"
                 orientation="right"
-                videoPath={Video}
+                videoPath={Video1}
                 buttonText="Смотреть трейлер"
                 buttonProps={{
-                    onClick: () => window.open(" https://youtu.be/JKSsEikX_k4")
+                    onClick: () => window.open("https://youtu.be/6LOrnNGRzWM")
                 }}
             >
                 <div className="cards-text-container">
@@ -27,7 +29,7 @@ export default function InfoCards() {
             <InfoCard
                 title="Используй магию"
                 orientation="left"
-                videoPath={Video}
+                videoPath={Video2}
             >
                 <div className="cards-text-container">
                     <p>Магия огня и воды, света и тьмы - готова быть изучена для исполнения ваших целей.</p>
@@ -38,7 +40,7 @@ export default function InfoCards() {
             <InfoCard
                 title="Уникальный ролевой мир"
                 orientation="right"
-                videoPath={Video}
+                videoPath={Video3}
                 buttonText="Больше о игре"
                 buttonProps={{
                     onClick: () => window.open("https://www.youtube.com/watch?v=wh5tEiBDe-w")
