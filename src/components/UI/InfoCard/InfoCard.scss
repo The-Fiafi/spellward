@@ -21,5 +21,9 @@
         .card-text-container {
             width: 40%;
         }
-    }    
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
 }

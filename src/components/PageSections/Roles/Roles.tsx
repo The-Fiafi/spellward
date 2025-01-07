@@ -44,7 +44,7 @@ export default function Roles() {
             <div className="roles-header">
                 <h1 className="card-header">Выбирайте свой путь</h1>
                 <div className="roles-subheader-text">
-                    <h2 className="card-subheader">Уникальных ролей в Spellward: 74</h2>
+                    <h2 className="card-subheader">Уникальных ролей в Spellward: 40+</h2>
                     <h2 className="card-subheader">Кем станете вы?</h2>
                 </div>
             </div> 

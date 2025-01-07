@@ -7,6 +7,7 @@ import TitleParallax from "./components/PageSections/TitleParallax/TitleParallax
 import InfoCards from "./components/PageSections/InfoCards/InfoCards";
 import Roles from "./components/PageSections/Roles/Roles";
 import HowToPlay from "./components/PageSections/HowToPlay/HowToPlay";
+import Footer from "./components/UI/Footer/Footer";
 
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
                 <InfoCards />
                 <Roles />
                 <HowToPlay />
+                <Footer />
             </div>
         </div>
     );
