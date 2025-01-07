@@ -6,6 +6,7 @@ import InfoCard from "@/components/UI/InfoCard/InfoCard";
 
 
 export default function InfoCards() {
+
     return (
         <section className="info-section">
             <InfoCard
@@ -13,6 +14,9 @@ export default function InfoCards() {
                 orientation="right"
                 videoPath={Video}
                 buttonText="Смотреть трейлер"
+                buttonProps={{
+                    onClick: () => window.open(" https://youtu.be/JKSsEikX_k4")
+                }}
             >
                 <div className="cards-text-container">
                     <p>Вы очутились на средневековом острове, охваченным сильным магическим проклятьем: мертвые восстают из под земли, чтобы пополнить свою армию живыми.</p>
@@ -24,7 +28,6 @@ export default function InfoCards() {
                 title="Используй магию"
                 orientation="left"
                 videoPath={Video}
-                buttonText="Смотреть обзор"
             >
                 <div className="cards-text-container">
                     <p>Магия огня и воды, света и тьмы - готова быть изучена для исполнения ваших целей.</p>
@@ -36,7 +39,10 @@ export default function InfoCards() {
                 title="Уникальный ролевой мир"
                 orientation="right"
                 videoPath={Video}
-                buttonText="Больше о РП"
+                buttonText="Больше о игре"
+                buttonProps={{
+                    onClick: () => window.open("https://www.youtube.com/watch?v=wh5tEiBDe-w")
+                }}
             >
                 <div className="cards-text-container">
                     <p>Объединяйтесь с друзьями или сталкивайтесь лбами с вашими врагами: в ролевой игре возможны любые переплетения сюжета.</p>

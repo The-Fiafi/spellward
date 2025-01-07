@@ -11,26 +11,27 @@ import "./InfoCard.scss";
 interface PropType { 
     title: string,
     videoPath: string,
-    buttonText: string,
-    children?: React.ReactNode
+    buttonText?: string,
+    children?: React.ReactNode,
+    buttonProps?: React.ButtonHTMLAttributes<HTMLButtonElement>,
     orientation?: "left" | "right"
 }
 
 
-export default function InfoCard({ title, videoPath, orientation, buttonText, children }: PropType) {
+export default function InfoCard({ title, videoPath, orientation, buttonText, buttonProps, children }: PropType) {
     const platform = useContext<PlatformGlobalContent>(PlatformContext);
     const isMobile = platform === "mobile";
     
     const Video = (props: React.HTMLAttributes<HTMLDivElement>) => (
         <div {...props} className="video-card-container">
-            <VideoPlayer src={videoPath} buttonText={isMobile ? buttonText : null} />
+            <VideoPlayer src={videoPath} buttonText={isMobile && buttonText ? buttonText : null} />
         </div>
     );
 
     const Child = (props: React.HTMLAttributes<HTMLDivElement>) => (
         <div {...props} className="card-text-container">
             {children}
-            {!isMobile ? <Button>{buttonText}</Button> : <></>}
+            {!isMobile && buttonText ? <Button {...buttonProps} >{buttonText}</Button> : <></>}
         </div>
     );
     

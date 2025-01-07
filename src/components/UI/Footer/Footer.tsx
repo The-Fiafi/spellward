@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer-content-container">
                 <div className="links-container">
-                    <div className="footer-logo-container">
+                    <div className="footer-link footer-logo-container">
                         <img src={Logo} alt="" />
                     </div>
 
@@ -16,13 +16,16 @@ export default function Footer() {
                         Spellward Wiki
                     </a> */}
 
-                    <a className="footer-link">
+                    <p
+                        className="footer-link"
+                        onClick={() => window.open("https://youtube.com/@imperial_space")}
+                    >
                         Наш Youtube
-                    </a>
+                    </p>
 
-                    <a className="footer-link">
+                    <p className="footer-link">
                         contact@ecspezi.com
-                    </a>
+                    </p>
                 </div>
             </div>
 

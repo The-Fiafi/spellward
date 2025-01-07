@@ -22,6 +22,9 @@ export default function HowToPlay() {
                 <MediaButton
                     targetColor="#5662F6"
                     MediaSvg={Discord}
+                    divProps={{
+                        onClick: () => window.open("https://discord.imperialspace.net/")
+                    }}
                 >
                     DISCORD
                 </MediaButton>
@@ -29,6 +32,9 @@ export default function HowToPlay() {
                 <MediaButton
                     targetColor="#28A8E9"
                     MediaSvg={Telegram}
+                    divProps={{
+                        onClick: () => window.open("https://t.me/impspace")
+                    }}
                 >
                     TELEGRAM
                 </MediaButton>
@@ -36,6 +42,9 @@ export default function HowToPlay() {
                 <MediaButton
                     targetColor="#FF0033"
                     MediaSvg={Youtube}
+                    divProps={{
+                        onClick: () => window.open("https://youtube.com/@imperial_space")
+                    }}
                 >
                     YOUTUBE
                 </MediaButton>

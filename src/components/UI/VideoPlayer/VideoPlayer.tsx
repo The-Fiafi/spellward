@@ -5,10 +5,11 @@ import Button from "@UI/Button/Button";
 
 interface PropType {
     src: string,
-    buttonText?: string
+    buttonText?: string,
+    buttonProps?: React.ButtonHTMLAttributes<HTMLButtonElement>
 }
 
-export default function VideoPlayer({ src, buttonText }: PropType) {
+export default function VideoPlayer({ src, buttonText, buttonProps }: PropType) {
     return (
         <div className="video-container" key={src}>
             <video autoPlay muted loop className="video">
@@ -24,6 +25,7 @@ export default function VideoPlayer({ src, buttonText }: PropType) {
                             borderRadius: "5vw",
                             bottom: 10
                         }}
+                        {...buttonProps}
                     >
                         {buttonText}
                     </Button>
