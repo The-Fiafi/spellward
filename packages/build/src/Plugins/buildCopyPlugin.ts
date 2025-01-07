@@ -13,10 +13,6 @@ export const buildCopyPlugin = (plugins: Configuration["plugins"], {paths, mode}
             patterns: [{
                 from: paths.public,
                 to: paths.output
-            },
-            {
-                from: path.resolve(paths.src, "static"),
-                to: path.resolve(paths.output, "static")
             }]
         })
     )

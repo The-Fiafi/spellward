@@ -25,5 +25,10 @@ export function buildWebpack(options: BuildOptions): webpack.Configuration {
         },
         resolve: buildResolvers(options),
         devServer: isDev ? buildDevServer(options) : undefined,
+        performance: { // Fucking shit
+            hints: false,
+            maxEntrypointSize: 512000,
+            maxAssetSize: 512000
+        }
     }
 }
