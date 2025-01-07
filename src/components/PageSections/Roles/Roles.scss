@@ -23,12 +23,11 @@
         display: flex;
         justify-content: center;
 
-        height: 36vw;
-
-        margin-top: 5vw;
+        width: 100%;
+        min-height: 36vw;
 
         .role-info-container {
-            padding: 1vw 1vw 1vw 1vw;
+            padding: 1vw;
 
             .role-info-text-header {
                 font-size: 2.4vw;
@@ -38,6 +37,33 @@
             .role-info-text {
                 font-size: 1.1vw;
                 font-weight: 200;
+            }
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    .available-roles {
+        position: relative !important;
+
+        display: inline-flex!important;
+        justify-content: flex-start !important;
+
+        height: 97vw !important;
+
+        margin: 5vw 1vw !important;
+
+        overflow-x: scroll !important;
+
+        .role-info-container {
+            padding: 5vw 2vw 2vw 2vw !important;
+
+            .role-info-text-header {
+                font-size: 4.8vw !important;
+            }
+
+            .role-info-text {
+                font-size: 3vw !important;
             }
         }
     }

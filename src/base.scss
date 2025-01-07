@@ -15,7 +15,6 @@
 
 html, body {
     background-color: #160E16;
-    max-height: 10000px;
     
     overflow-x: hidden;
 
@@ -34,4 +33,18 @@ html, body {
 
     font-size: 2vw;
     font-weight: 200;
+}
+
+
+@media (orientation: portrait) {
+    .card-header {
+        font-size: 7vw !important;
+    }
+    
+    .card-subheader {
+        width: 100%;
+    
+        font-size: 4vw;
+        font-weight: 200;
+    }
 }
