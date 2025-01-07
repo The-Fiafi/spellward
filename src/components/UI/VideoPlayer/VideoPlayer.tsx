@@ -1,15 +1,35 @@
 import "./VideoPlayer.scss";
 
+import Button from "@UI/Button/Button";
+
+
 interface PropType {
-    src: string
+    src: string,
+    buttonText?: string
 }
 
-export default function VideoPlayer({ src }: PropType) {
+export default function VideoPlayer({ src, buttonText }: PropType) {
     return (
         <div className="video-container" key={src}>
             <video autoPlay muted loop className="video">
                 <source src={src} type="video/mp4"/>
             </video>
+
+            {buttonText 
+                ? (
+                    <Button
+                        style={{
+                            position: "absolute",
+                            fontSize: "4vw",
+                            borderRadius: "5vw",
+                            bottom: 10
+                        }}
+                    >
+                        {buttonText}
+                    </Button>
+                ) 
+                : <></>
+            }
         </div>
     );
 }
