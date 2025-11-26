@@ -5,7 +5,7 @@
   "main": "./src/index.ts",
   "scripts": {
     "start": "webpack serve --env mode=production",
-    "build": "webpack --env mode=development",
+    "build": "webpack --env mode=production",
     "build:production": "webpack --env mode=production",
     "eslint:lint": "eslint src/*",
     "eslint:fix": "eslint src/* --fix"
@@ -13,8 +13,11 @@
   "author": "@orix0689",
   "license": "ICLA",
   "workspaces": [
-    "packages/*"
+    "./packages/*"
   ],
+  "imports": {
+    "#packages/build": "./packages/build/src/index.ts"
+  },
   "dependencies": {
     "@packages/build": "*",
     "@react-spring/parallax": "^9.7.5",

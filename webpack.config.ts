@@ -1,7 +1,7 @@
-import path from 'path';
-import webpack from 'webpack';
+import path from "path";
+import webpack from "webpack";
 
-import { BuildMode, BuildPaths, buildWebpack } from '@packages/build';
+import { BuildMode, BuildPaths, buildWebpack } from "#packages/build";
 
 interface EnvVariables {
     mode?: BuildMode;

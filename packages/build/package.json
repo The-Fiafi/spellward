@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "main": "./src/index.ts",
   "browserslist": [ "last 5 version", "not dead", "iOS >= 9" ],
-  "development": [
-    "last 1 chrome version",
-    "last 1 firefox version",
-    "last 1 safari version",
-    "last 1 ie version"
-  ],
   "devDependencies": {
     "@babel/preset-react": "^7.26.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
