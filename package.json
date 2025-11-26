@@ -4,8 +4,8 @@
   "description": "",
   "main": "./src/index.ts",
   "scripts": {
-    "start": "webpack serve --env mode=production",
-    "build": "webpack --env mode=production",
+    "start": "webpack serve --env mode=development",
+    "build": "webpack --env mode=development",
     "build:production": "webpack --env mode=production",
     "eslint:lint": "eslint src/*",
     "eslint:fix": "eslint src/* --fix"
